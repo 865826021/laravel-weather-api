@@ -1,5 +1,5 @@
 {
-    "name": "yuistack/weatherApi",
+    "name": "falstack/laravel-weather-api",
     "description": "国内天气数据存储",
     "license": "MIT",
     "authors": [
