@@ -15,6 +15,7 @@ class WeatherApiTest extends TestCase
     public function testWeatherApiMake()
     {
         $pwd = md5('password');
+
         $pwd2 = $this->weather->make('password');
 
         $this->assertEquals($pwd, $pwd2);
@@ -23,6 +24,7 @@ class WeatherApiTest extends TestCase
     public function testWeatherApiMakeWithSalt()
     {
         $pwd = md5('passwordyui');
+
         $pwd2 = $this->weather->make('password', ['salt' => 'yui']);
 
         $this->assertEquals($pwd, $pwd2);
@@ -31,6 +33,7 @@ class WeatherApiTest extends TestCase
     public function testWeatherApiCheck()
     {
         $pwd = md5('password');
+        
         $check = $this->weather->check('password', $pwd);
 
         $this->assertTrue($check);
