@@ -33,7 +33,7 @@ class WeatherApiTest extends TestCase
     public function testWeatherApiCheck()
     {
         $pwd = md5('password');
-        
+
         $check = $this->weather->check('password', $pwd);
 
         $this->assertTrue($check);
