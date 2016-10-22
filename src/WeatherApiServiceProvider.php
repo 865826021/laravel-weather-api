@@ -1,6 +1,6 @@
 <?php
 
-namespace Falstack\WeatherApi;
+namespace Falstack\Weather;
 
 use Illuminate\Support\ServiceProvider;
 

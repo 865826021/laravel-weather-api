@@ -1,6 +1,6 @@
 <?php
 
-namespace Falstack\WeatherApi;
+namespace Falstack\Weather;
 
 class WeatherApi
 {
